@@ -1,0 +1,107 @@
+.section-gap {
+  margin-top: 32px;
+  width: 1320px;
+  
+}
+.section-bread {
+  width: 1320px;
+  height: 58px;
+}
+
+.breadcrumb-item .active {
+  text-decoration: none;
+}
+
+.catalog-clothes {
+  margin-top: 32px;
+}
+
+.sort {
+  width: 273px;
+  height: 34px;
+}
+
+.section-body {
+  width: 1728px;
+  height: 1762px;
+  gap: 24px;
+}
+
+.section-wrap {
+  width: 312px;
+  height: 828px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sort_filter {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.product-filter {
+  width: 312px;
+  height: 53px;
+  display: inline;
+}
+
+.gender {
+  float: right;
+}
+
+.like {
+  float: right;
+}
+
+.top {
+  display: flex;
+  float: left;
+  width: 38px;
+  height: 23px;
+  background-color: #B4FFF0;
+  border-radius: 4px; 
+  align-items: center;
+}
+
+.organic {
+  display: flex;
+  float: left;
+  font-size: 10px;
+  width: 56px;
+  height: 23px;
+  background-color: #E0E3E3;
+  border-radius: 4px; 
+  align-items: center;
+}
+
+.wrap__prod {
+  width: 264px;
+  margin-top: 20px;
+}
+
+.accordion-item {
+  background-color: #EFF1F1;
+}
+
+.price__location {
+  margin-top: 26px;
+}
+
+.price-old {
+  font-family: 'Stolzl';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #747778;
+  text-decoration: line-through;
+}
+
+.price-new {
+  font-family: 'Stolzl';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #2D3132;
+}
+

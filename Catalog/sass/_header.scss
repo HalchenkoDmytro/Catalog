@@ -1,0 +1,73 @@
+.header {
+  height: 180px;
+
+
+  &__promo {
+    height: 44px;
+    width: 1728px;
+    background-color: #CBDCFF;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__row {
+    margin-top: 20px;
+    display: flex;
+    width: 1320px;
+    height: 44px;
+    margin-left: 204.92px;
+  }
+
+  &__nav {
+    margin-left: 204px;
+  }
+}
+
+.brand {
+  font-family: 'Stolzl';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0F1A34;
+  margin-top: revert;
+  margin-left: 10px;
+}
+
+.btn {
+  margin-left: 50px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  font-family: 'Stolzl';
+}
+
+.d-flex {
+  margin-left: 77px;
+}
+
+.form-select {
+  margin-left: 24px;
+}
+
+.heart {
+  margin-left: 38px;
+  margin-top: auto;
+}
+
+.header-icons {
+  display: flex;
+}
+
+.avatar {
+  display: flex;
+  margin-left: 36.88px;
+}
+
+.nav-link .active {
+	&:after {
+		height: 2px !important;
+		background: #e74c3c !important;
+	}
+}

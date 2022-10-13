@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/5a388fc33f.js" crossorigin="anonymous"></script>
+  <title>Catalog</title>
+</head>
+
+<body style="width: 1728px;">
+  <header class="container container-fluid header" style="width: 1728px">
+    <div class="container-fluid header__promo" style="display: flex; width: 1728px; margin: 0 auto; justify-content: center;">
+      <img src="./img/👍.svg" alt="">
+      <img src="./img/image 18.svg" alt="">
+      <p class="brand">Брендовий верхній одяг від 899 грн</p>
+    </div>
+    <div class="header__row" style="margin-left: 205px; width: 1728px;">
+      <div class="logo">
+        <img src="./img/monvalise.svg" style="width: 150px; height: 21px;" alt="Logo">
+      </div>
+      <div>
+        <form class="d-flex">
+          <input class="form-control me-2" style="margin-left: 81px; width: 639px;" type="search" placeholder="Знайти речі або бренди" aria-label="Search">
+        </form>
+      </div>
+      <div>
+        <button type="button" class="btn btn-dark" style="width: 129px; height: 38px; margin-left: 24px; font-size: 12px;">Додати товар</button>
+      </div>
+      <div>
+        <select class="form-select" aria-label="Default select example" style="font-size: 12px;">
+          <option selected>Укр</option>
+          <option value="1">De</option>
+          <option value="2">Eng</option>
+        </select>
+      </div>
+      <div class="header-icons" style="margin-left: 30px;">
+          <button type="button" class="btn btn-light position-relative" style="margin-left: 0;">
+            <img src="./img/heart.svg" alt="Like">
+            <span
+              class="position-absolute top-0 start-70 translate-middle badge bg-light text-dark rounded-pill">8</span>
+          </button>
+          <button type="button" class="btn btn-light position-relative" style="margin-left: 0;" >
+            <img src="./img/message.svg" alt="message">
+            <span
+              class="position-absolute top-0 start-70 translate-middle badge bg-danger text-light rounded-pill">3</span>
+          </button>
+          <button type="button" class="btn btn-light position-relative" style="margin-left: 0;">
+            <img src="./img/basket.svg" alt="basket">
+            <span
+              class="position-absolute top-0 start-70 translate-middle badge bg-light text-dark rounded-pill">3</span>
+          </button>
+      </div>
+      <div class="avatar">
+        <img src="./img/avatar.png" alt="Avatars">
+        <select class="form-select" aria-label="Default select example">
+
+          <option selected></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="header__nav">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 23px;">
+        <div class="container-fluid" style="width: 1320px; ">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav text-uppercase" style="display: contents; gap: 32px;">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">головна</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">каталог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">жінкам</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">чоловікам</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">дитячі речі</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">аукціон</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">бренди</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">акції</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">аутентифікація</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">блог</a>
+              </li>              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container section-body" style="padding-left: 204px; width: 1728px;">
+    <div class="section-gap"></div>
+    <div class="row section-bread">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Головна</a></li>
+          <li class="breadcrumb-item" style="text-decoration: none;" aria-current="page">Каталог одягу</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="row">
+      <p class="catalog-clothes">Каталог одягу</p>
+    </div>
+    <div class="row">
+      <div class="row justify-content-between">
+        <div class="col filter">
+          Фільтри
+        </div>
+        <div class="col">
+          <div style="display:flex; vertical-align: middle; float: right;">
+            <span class="sort_filter">Сортувати за:</span>
+            <select class="form-select sort" style="width: 170px" aria-label="Default select example">
+              <option selected>За замовчуванням</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container section-gap"></div>
+    <div class="row" style="width: 1320px;">
+      <div class="col-3" style="width: 312px;">
+        <div class="accordion section-wrap" style="width: 312px;" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="kategory">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseKategory" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseKategory">
+                Категорії
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseKategory" class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingKategory">
+              <div class="accordion-body">
+                Категорії товарів
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="price">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapsePrice" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapsePrice">
+                Ціна
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapsePrice" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingPrice">
+              <div class="accordion-body">
+                <a href="https://mdbgo.io/marta-szymanska/mdb5-demo-pro-design-blocks/pro/forms/multi-range.html"
+                  target="_blank">multi double slider</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="seller">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseSeller" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseSeller">
+                Продавець
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSeller" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingSeller">
+              <div class="accordion-body">
+                Список продавців.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="brend">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseBrend" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseBrend">
+                Бренд
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseBrend" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingBrend">
+              <div class="accordion-body">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="brand1">
+                  <label class="form-check-label" for="brand1">
+                    Бренд1
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="brand2" checked>
+                  <label class="form-check-label" for="brand2">
+                    Бренд2
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="gender">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseGender" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseGender">
+                Стать
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseGender" class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingGender">
+              <div class="accordion-body">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="woman" checked>
+                  <label class="form-check-label" for="woman">
+                    Жінкам
+                  </label>
+                  <label class="gender">(64)</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="man" checked>
+                  <label class="form-check-label" for="man">
+                    Чоловікам
+                  </label>
+                  <label class="gender">(16)</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="unisex">
+                  <label class="form-check-label" for="unisex">
+                    Унісекс
+                  </label>
+                  <label class="gender">(24)</label>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="size">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseSize" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseSize">
+                Розмір
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSize" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingSize">
+              <div class="accordion-body">
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="woman" checked>
+                  <label class="form-check-label" for="woman">
+                    XS
+                  </label>
+                  <label class="gender">(10)</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="man" checked>
+                  <label class="form-check-label" for="man">
+                    S
+                  </label>
+                  <label class="gender">(15)</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="unisex">
+                  <label class="form-check-label" for="unisex">
+                    M
+                  </label>
+                  <label class="gender">(20)</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="unisex" checked>
+                  <label class="form-check-label" for="unisex">
+                    L
+                  </label>
+                  <label class="gender">(25)</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="unisex">
+                  <label class="form-check-label" for="unisex">
+                    XL
+                  </label>
+                  <label class="gender">(20)</label>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="colors">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseColors" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseColors">
+                Колір
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseColors" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingColors">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="material">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseMaterial" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseMaterial">
+                Матеріал
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseMaterial" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingMaterial">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="season">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseSeason" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseSeason">
+                Сезон
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSeason" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingSeason">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="styles">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseStyles" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseStyles">
+                Стиль
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseStyles" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingStyles">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-9" style="width: 984px;">
+        <div class="container" style="margin-left: 24px;">
+          <div class="row" style="margin-top: 24px;">
+            <div class="col-4">
+              <div class="card border-0" style="flex-direction: column;">
+                <div class="card-body" style="display: grid;">
+                  <div style="display:block;">
+                    <div class="like">
+                      <img src="./img/heart.svg" alt="Like">
+                    </div>
+                  </div>
+                  <div style="display: flex; margin: 0 auto;">
+                    <img src="./img/products/prod-1.png" alt="prod-1">
+                  </div>
+                  <div class="top">
+                    <p style="text-transform: uppercase; font-size: 10px; text-align: center; margin: 0 auto;">топ</p>
+                  </div>
+                  <div class="wrap__prod">
+                    <div class="title__product">
+                      <div class="brand__prod">louis vuitton</div>
+                      <div class="descr_product">Темно-сині джинси Louis Vuitton</div>
+                    </div>
+                    <div class="price__location">
+                      <div class="row" style="width: 264px; margin: auto;">
+                        <div class="col">
+                          <div class="row price-old">5 499</div>
+                          <div class="row price-new ">3 799</div>
+                        </div>
+                        <div class="col" style="float: right;">
+                          <div style="float: right;">
+                            <i class="fa-solid fa-location-dot" style="font-size: 10.8px;"></i><span
+                              style="font-size: 12px; margin-left: 4px;">Херсон</span>
+                          </div>
+                          <div style="float: right;">
+                            <img src="./img/clients/avatar-1.png" alt="Av1">
+                            <span style="font-size: 14px; margin-left: 8px; font-weight: 500">LoveBrand</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card border-0" style="flex-direction: column;">
+                <div class="card-body" style="display: grid;">
+                  <div style="display:block;">
+                    <div class="like">
+                      <img src="./img/heart.svg" alt="Like">
+                    </div>
+                  </div>
+                  <div style="display: flex; margin: 0 auto;">
+                    <img src="./img/products/prod-2.png" alt="prod-2">
+                  </div>
+                  <div class="top">
+                    <p style="text-transform: uppercase; font-size: 10px; text-align: center; margin: 0 auto;">топ</p>
+                  </div>
+                  <div class="wrap__prod">
+                    <div class="title__product">
+                      <div class="brand__prod">thom browne</div>
+                      <div class="descr_product">Чорний піджак Thom Browne</div>
+                    </div>
+                    <div class="price__location">
+                      <div class="row" style="width: 264px; margin: auto;">
+                        <div class="col">
+                          <div class="row price-old">11 999</div>
+                          <div class="row price-new ">8 599</div>
+                        </div>
+                        <div class="col" style="float: right;">
+                          <div style="float: right;">
+                            <i class="fa-solid fa-location-dot" style="font-size: 10.8px;"></i><span
+                              style="font-size: 12px; margin-left: 4px;">Хмельницький</span>
+                          </div>
+                          <div style="float: right; width: 116px">
+                            <img src="./img/clients/avatar-2.png" alt="Av1">
+                            <span style="font-size: 14px; margin-left: 8px; font-weight: 500">Sell_For_Men</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card border-0" style="flex-direction: column;">
+                <div class="card-body" style="display: grid;">
+                  <div style="display:block;">
+                    <div class="like">
+                      <img src="./img/heart.svg" alt="Like">
+                    </div>
+                  </div>
+                  <div style="display: flex; margin: 0 auto;">
+                    <img src="./img/products/prod-3.png" alt="prod-3">
+                  </div>
+                  <div class="top" style="background-color: transparent;">
+                    <p style="text-transform: uppercase; font-size: 10px; text-align: center; margin: 0 auto;"></p>
+                  </div>
+                  <div class="wrap__prod">
+                    <div class="title__product">
+                      <div class="brand__prod">canali</div>
+                      <div class="descr_product">Вовняний піджак Canali</div>
+                    </div>
+                    <div class="price__location">
+                      <div class="row" style="width: 264px; margin: auto;">
+                        <div class="col">
+                          <div class="row price-old">4 999</div>
+                          <div class="row price-new ">2 599</div>
+                        </div>
+                        <div class="col" style="float: right;">
+                          <div style="float: right;">
+                            <i class="fa-solid fa-location-dot" style="font-size: 10.8px;"></i><span
+                              style="font-size: 12px; margin-left: 4px;">Хмельницький</span>
+                          </div>
+                          <div style="float: right; width: 116px">
+                            <img src="./img/clients/avatar-2.png" alt="Av1">
+                            <span style="font-size: 14px; margin-left: 8px; font-weight: 500">Sell_For_Men</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card border-0" style="flex-direction: column;">
+                <div class="card-body" style="display: grid;">
+                  <div style="display:block;">
+                    <div class="like">
+                      <img src="./img/heart.svg" alt="Like">
+                    </div>
+                  </div>
+                  <div style="display: flex; margin: 0 auto;">
+                    <img src="./img/products/prod-4.png" alt="prod-4">
+                  </div>
+                  <div class="top" style="background-color: transparent;">
+                    <p style="text-transform: uppercase; font-size: 10px; text-align: center; margin: 0 auto;"></p>
+                  </div>
+                  <div class="wrap__prod">
+                    <div class="title__product">
+                      <div class="brand__prod">ouis vuitton</div>
+                      <div class="descr_product">Клатч Louis Vuitton Limelight</div>
+                    </div>
+                    <div class="price__location">
+                      <div class="row" style="width: 264px; margin: auto;">
+                        <div class="col">
+                          <div class="row price-old">4 999</div>
+                          <div class="row price-new ">3 499</div>
+                        </div>
+                        <div class="col" style="float: right;">
+                          <div style="float: right;">
+                            <i class="fa-solid fa-location-dot" style="font-size: 10.8px;"></i><span
+                              style="font-size: 12px; margin-left: 4px;">Дніпро</span>
+                          </div>
+                          <div style="float: right; width: 116px">
+                            <img src="./img/clients/avatar-3.png" alt="Av1">
+                            <span class="float-end"
+                              style="font-size: 14px; margin-left: 8px; font-weight: 500">Brandear</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card border-0" style="flex-direction: column;">
+                <div class="card-body" style="display: grid;">
+                  <div style="display:block;">
+                    <div class="organic">
+                      <p style="text-transform: uppercase; font-size: 10px; text-align: center; margin: 0 auto;">organic</p>
+                    </div>
+                    <div class="like">
+                      <img src="./img/heart.svg" alt="Like">
+                    </div>
+                  </div>
+                  <div style="display: flex; margin: 0 auto;">
+                    <img src="./img/products/prod-5.png" alt="prod-5">
+                  </div>
+                  <div class="top" style="background-color: transparent;">
+                    <p style="text-transform: uppercase; font-size: 10px; text-align: center; margin: 0 auto;"></p>
+                  </div>
+                  <div class="wrap__prod">
+                    <div class="title__product">
+                      <div class="brand__prod">elena chiselini</div>
+                      <div class="descr_product">Вовняний піджак Canali</div>
+                    </div>
+                    <div class="price__location">
+                      <div class="row" style="width: 264px; margin: auto;">
+                        <div class="col">
+                          <div class="row price-old">1 999</div>
+                          <div class="row price-new ">1 599</div>
+                        </div>
+                        <div class="col" style="float: right;">
+                          <div style="float: right;">
+                            <i class="fa-solid fa-location-dot" style="font-size: 10.8px;"></i><span
+                              style="font-size: 12px; margin-left: 4px;">Дніпро</span>
+                          </div>
+                          <div style="float: right; width: 116px">
+                            <img src="./img/clients/avatar-3.png" alt="Av1">
+                            <span class="float-end"
+                              style="font-size: 14px; margin-left: 8px; font-weight: 500">Brandear</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card border-0" style="flex-direction: column;">
+                <div class="card-body" style="display: grid;">
+                  <div style="display:block;">
+                    <div class="like">
+                      <img src="./img/heart.svg" alt="Like">
+                    </div>
+                  </div>
+                  <div style="display: flex; margin: 0 auto;">
+                    <img src="./img/products/prod-6.png" alt="prod-6">
+                  </div>
+                  <div class="top" style="background-color: transparent;">
+                    <p style="text-transform: uppercase; font-size: 10px; text-align: center; margin: 0 auto;"></p>
+                  </div>
+                  <div class="wrap__prod">
+                    <div class="title__product">
+                      <div class="brand__prod">acne</div>
+                      <div class="descr_product">Бомбер Acne на блискавці</div>
+                    </div>
+                    <div class="price__location">
+                      <div class="row" style="width: 264px; margin: auto;">
+                        <div class="col">
+                          <div class="row price-old">5 999</div>
+                          <div class="row price-new ">4 199</div>
+                        </div>
+                        <div class="col" style="float: right;">
+                          <div style="float: right;">
+                            <i class="fa-solid fa-location-dot" style="font-size: 10.8px;"></i><span
+                              style="font-size: 12px; margin-left: 4px;">Київ</span>
+                          </div>
+                          <div style="float: right; width: 116px">
+                            <img src="./img/clients/avatar-4.png" alt="Av1">
+                            <span class="float-end"
+                              style="font-size: 14px; margin-left: 8px; font-weight: 500">Alexalex</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card border-0" style="flex-direction: column;">
+                <div class="card-body" style="display: grid;">
+                  <div style="display:block;">
+                    <div class="like">
+                      <img src="./img/heart.svg" alt="Like">
+                    </div>
+                  </div>
+                  <div style="display: flex; margin: 0 auto;">
+                    <img src="./img/products/prod-7.png" alt="prod-7">
+                  </div>
+                  <div class="top" style="background-color: transparent;">
+                    <p style="text-transform: uppercase; font-size: 10px; text-align: center; margin: 0 auto;"></p>
+                  </div>
+                  <div class="wrap__prod">
+                    <div class="title__product">
+                      <div class="brand__prod">gucci</div>
+                      <div class="descr_product">Довга сукня Gucci</div>
+                    </div>
+                    <div class="price__location">
+                      <div class="row" style="width: 264px; margin: auto;">
+                        <div class="col">
+                          <div class="row price-old">11 999</div>
+                          <div class="row price-new ">8 599</div>
+                        </div>
+                        <div class="col" style="float: right;">
+                          <div style="float: right;">
+                            <i class="fa-solid fa-location-dot" style="font-size: 10.8px;"></i><span
+                              style="font-size: 12px; margin-left: 4px;">Рівне</span>
+                          </div>
+                          <div style="float: right; width: 116px">
+                            <img src="./img/clients/avatar-5.png" alt="Av1">
+                            <span class="float-end"
+                              style="font-size: 14px; margin-left: 8px; font-weight: 500">SellBuy</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card border-0" style="flex-direction: column;">
+                <div class="card-body" style="display: grid;">
+                  <div style="display:block;">
+                    <div class="like">
+                      <img src="./img/heart.svg" alt="Like">
+                    </div>
+                  </div>
+                  <div style="display: flex; margin: 0 auto;">
+                    <img src="./img/products/prod-8.png" alt="prod-8">
+                  </div>
+                  <div class="top" style="background-color: transparent;">
+                    <p style="text-transform: uppercase; font-size: 10px; text-align: center; margin: 0 auto;"></p>
+                  </div>
+                  <div class="wrap__prod">
+                    <div class="title__product">
+                      <div class="brand__prod">chanel</div>
+                      <div class="descr_product">Помаранчевий бомбер Woolrich</div>
+                    </div>
+                    <div class="price__location">
+                      <div class="row" style="width: 264px; margin: auto;">
+                        <div class="col">
+                          <div class="row price-old">1 999</div>
+                          <div class="row price-new ">1 599</div>
+                        </div>
+                        <div class="col" style="float: right;">
+                          <div style="float: right;">
+                            <i class="fa-solid fa-location-dot" style="font-size: 10.8px;"></i><span
+                              style="font-size: 12px; margin-left: 4px;">Кропивницький</span>
+                          </div>
+                          <div style="float: right; width: 116px">
+                            <img src="./img/clients/avatar-6.png" alt="Av1">
+                            <span class="float-end"
+                              style="font-size: 14px; margin-left: 8px; font-weight: 500">Deeva_Sofia</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card border-0" style="flex-direction: column;">
+                <div class="card-body" style="display: grid;">
+                  <div style="display:block;">
+                    <div class="like">
+                      <img src="./img/heart.svg" alt="Like">
+                    </div>
+                  </div>
+                  <div style="display: flex; margin: 0 auto;">
+                    <img src="./img/products/prod-9.png" alt="prod-9">
+                  </div>
+                  <div class="top" style="background-color: transparent;">
+                    <p style="text-transform: uppercase; font-size: 10px; text-align: center; margin: 0 auto;"></p>
+                  </div>
+                  <div class="wrap__prod">
+                    <div class="title__product">
+                      <div class="brand__prod">hache</div>
+                      <div class="descr_product">Салатове пальто Hache</div>
+                    </div>
+                    <div class="price__location">
+                      <div class="row" style="width: 264px; margin: auto;">
+                        <div class="col">
+                          <div class="row price-old">5 999</div>
+                          <div class="row price-new ">4 199</div>
+                        </div>
+                        <div class="col" style="float: right;">
+                          <div style="float: right;">
+                            <i class="fa-solid fa-location-dot" style="font-size: 10.8px;"></i><span
+                              style="font-size: 12px; margin-left: 4px;">Київ</span>
+                          </div>
+                          <div style="float: right;">
+                            <img src="./img/clients/avatar-1.png" alt="Av1">
+                            <span style="font-size: 14px; margin-left: 8px; font-weight: 500">LoveBrand</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav aria-label="Page navigation example">
+        <ul class="pagination mt-5 text-dark justify-content-center">
+          <li class="page-item"><a class="page-link rounded-pill m-1 border-2" href="#">Попередня</a></li>
+          <li class="page-item"><a class="page-link rounded-circle m-1 border-2" href="#">1</a></li>
+          <li class="page-item"><a class="page-link rounded-circle active m-1 border-3 border-dark" href="#">2</a></li>
+          <li class="page-item"><a class="page-link rounded-circle m-1 border-2" href="#">3</a></li>
+          <li class="page-item"><a class="page-link rounded-circle m-1 border-2" href="#">4</a></li>
+          <li class="page-item"><a class="page-link rounded-circle m-1 border-2" href="#">5</a></li>
+          <li class="page-item"><a class="page-link rounded-circle m-1 border-2" href="#">6</a></li>
+          <li class="page-item"><a class="page-link rounded-circle m-1 border-2" href="#">7</a></li>
+          <li class="page-item"><a class="page-link rounded-circle m-1 border-2" href="#">8</a></li>
+          <li class="page-item"><a class="page-link rounded-pill m-1 border-2" href="#">Наступна</a></li>
+        </ul>
+      </nav>
+      </div>      
+    </div>
+    </div>
+  </section>
+
+  <footer class="container" style="width: 1728px; background: #EFF1F1;">
+    <div class="row text-center text-dark" style="margin-left: 204px; width: 1320px; margin-top: 72px;">
+      <div class="col flex-column justify-content-start" style="width: 312px; display: flex; align-items: flex-start;">
+        <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Довідка для покупців</a></div>
+        <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Отримати підтримку</a></div>
+        <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Як купувати</a></div>
+        <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Як залишити корисний відгук</a></div>
+        <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Програма Захисту Покупців</a></div>
+        <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Рекомендації з безпечних покупок</a></div>        
+      </div>
+
+      <div class="col flex-column justify-content-start" style="width: 312px; display: flex; align-items: flex-start;">
+        <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Довідка для продавців</a></div>
+        <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Як почати продавати</a></div>
+        <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Тарифи</a></div>
+        <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Угода користувача</a></div>
+        <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Політика конфіденційності</a></div>
+        <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Правила користування порталом</a></div>
+        <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Бонусна програма</a></div> 
+      </div>
+        <div class="col flex-column justify-content-start" style="width: 312px; display: flex; align-items: flex-start;">
+          <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Про нас</a></div>
+          <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Довідка та FAQ</a></div>
+          <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Захист легальності контенту</a></div>
+          <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Адміністрація</a></div>
+          <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Вакансії</a></div>       
+        </div>
+
+          <div class="col flex-column justify-content-start" style="width: 312px; display: flex; align-items: flex-start;">
+            <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">Мобільний додаток</a></div>
+            <div class="mt-1 "><a class="text-dark text-decoration-none" href="#">
+              <img src="./img/google-play.png" alt="google-play">
+            </a></div>        
+          </div>
+    </div>
+    <hr style="margin-top: 72px;">
+    <p style="margin-top: 38px; font-size: 12px; color: #2D3132;">© 2022 Monvalise</p>
+  </footer>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
